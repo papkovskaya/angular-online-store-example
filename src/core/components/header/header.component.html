@@ -1,0 +1,40 @@
+<header class="header container">
+  <nav class="header__nav">
+    <div class="header__nav-logo">
+      <a href="#"><h1>Stickersp - Online Store</h1></a>
+      <p>Наклейки винил</p>
+    </div>
+    <div class="header__nav-menu menu-links">
+      <ul class="header__nav-menu-list">
+        <li>
+          <a href="index.html" class="active">Главная</a>
+        </li>
+        <li>
+          <a href="#popular">Стикеры</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <div class="header__nav-searchform">
+        <form>
+          <input
+            type="text"
+            id="inputSearch"
+            autocomplete="off"
+            autofocus
+            placeholder="Search.." />
+          <div class="close-search"></div>
+        </form>
+        <div class="header__nav-search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="header__nav-basket">
+        <fa-icon [icon]="faShoppingCart"></fa-icon>
+<!--        <i class="fa-solid fa-basket-shopping"></i>-->
+        <span class="header__nav-basket-number">0</span>
+      </div>
+    </div>
+  </nav>
+</header>

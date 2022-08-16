@@ -1,0 +1,22 @@
+h3 {
+  color: #000;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+.filter-products__id {
+  display: flex;
+  justify-content: space-evenly;
+}
+.filter-products__size label {
+  font-size: 1.7em;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+.filter-products__size .btn-size {
+  width: 50px;
+  height: 25px;
+}

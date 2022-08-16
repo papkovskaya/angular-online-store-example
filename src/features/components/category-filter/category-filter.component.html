@@ -1,0 +1,9 @@
+<div class="filter-products-filter-category">
+  <h3>Category</h3>
+  <div class="filter-products__select" id="category">
+    <div class="filter-products__all filter-btn" (click)="filterBy.emit(Category.All)">All</div>
+    <div class="filter-products__drift filter-btn" (click)="filterBy.emit(Category.Drift)">Drift Stickers</div>
+    <div class="filter-products__jdm filter-btn" (click)="filterBy.emit(Category.Jdm)">JDM Stickers</div>
+    <div class="filter-products__stance filter-btn" (click)="filterBy.emit(Category.Stance)">Stance Stickers</div>
+  </div>
+</div>

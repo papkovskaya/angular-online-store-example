@@ -1,0 +1,57 @@
+h3 {
+  color: #000;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+.filter-products__price-field {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  background: rgb(0 0 0);
+  border-radius: 40px;
+  width: 17em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.price-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  color: #000;
+  font-size: 14px;
+  padding: 1.2em;
+  font-weight: 400;
+}
+.filter-products__price-field .price-filter-min, .filter-products__price-field .price-filter-max {
+  width: 100px;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.price-title {
+  position: relative;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.price-wrap-1, .price-wrap-2 {
+  display: flex;
+}
+.price-wrap #one, .price-wrap #two {
+  text-align: right;
+  margin-right: 2px;
+  color: #000;
+  font-family: 'Roboto Condensed';
+  font-size: 14px;
+  font-weight: 400;
+}
+.price-wrap_line {
+  margin: 0 10px;
+}

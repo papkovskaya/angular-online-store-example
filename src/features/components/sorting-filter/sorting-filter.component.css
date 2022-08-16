@@ -1,0 +1,26 @@
+.filter-products__sort-container {
+  position: relative;
+  height: 2em;
+}
+.filter-products__sort {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #a9a9a9;
+  font-size: 20px;
+  top: 0;
+  right: 2.5em;
+}
+.sort {
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+.sort:hover {
+  transition: all 0.8s ease-in-out;
+  color: #0f0f0f;
+}
+.sort fa-icon {
+  padding: 5px;
+}

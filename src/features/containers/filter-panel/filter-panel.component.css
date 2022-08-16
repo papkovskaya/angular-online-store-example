@@ -1,0 +1,22 @@
+.filter-products-sticky {
+  position: sticky;
+  top: 0px;
+  transition: all 0.8s ease-in-out;
+}
+.reset-filter {
+  padding: 2em 0;
+}
+.reset {
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Cuprum';
+  width: 120px;
+}

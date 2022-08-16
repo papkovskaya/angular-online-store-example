@@ -1,0 +1,24 @@
+<div class="filter-products-filter">
+  <div class="filter-products-sticky" id="filters">
+    <app-category-filter
+      (filterBy)="onFilterByCategory($event)">
+    </app-category-filter>
+    <app-size-filter
+      [selectedSizes]="selectedSizes"
+      (selectSize)="onFilterBySizeSelected($event)"
+      (removeSize)="onFilterBySizeUnselected($event)">
+    </app-size-filter>
+    <app-price-filter
+      [prices]="selectedPrices"
+      (setMinPrice)="onMinPriceSelected($event)"
+      (setMaxPrice)="onMaxPriceSelected($event)">
+    </app-price-filter>
+    <app-color-filter
+      [selectedColors]="selectedColors"
+      (selectColor)="onColorSelected($event)"
+      (removeColor)="onColorRemoved($event)">
+    </app-color-filter>
+    <div class="reset-filter"><button class="reset" (click)="resetFilters()">Reset</button></div>
+    <div class="reset-filter"><button class="reset" (click)="resetAllSettings()">Reset All</button></div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+.container {
+  max-width: 1280px;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: content-box;
+  transition: all 0.4s ease;
+}
+footer {
+  background: #000;
+  min-width: 100%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 90px;
+  margin-top: 25px;
+  transition: all 0.5s ease-out;
+}
+.logo-rol {
+  background: url(src/assets/rs_school.svg);
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 100px;
+  background-position: center;
+  transition: 0.3s ease;
+}
+.stck {
+  background: url(src/assets/stck.svg);
+  width: 150px;
+  height: 50px;
+  margin-right: 45px;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.stck:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+.logo-rol:hover {
+  transform: scale(0.95);
+}
+.rolling_scope a {
+  transition: all 0.5s ease-out;
+}
+.rolling_scope a:hover {
+  color: #ffee00;
+}
+.copyright_year a {
+  transition: all 0.5s ease-out;
+}
+.copyright_year a:hover {
+  color: #ffee00;
+}
+.copyright_year {
+  user-select: none;
+}
+.copyright_year span:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-marg {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

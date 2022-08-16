@@ -1,0 +1,13 @@
+<div class="filter-products__color">
+  <h3>Color</h3>
+  <div class="filter-products__box-colors">
+    <div class="filter-products__box-colors btn-col">
+      <div
+        *ngFor="let color of colors"
+        class="color {{color}}"
+        [ngClass]="{'color-active': selectedColors.includes(color)}"
+        (click)="onColorClicked(color)"
+      ></div>
+    </div>
+  </div>
+</div>

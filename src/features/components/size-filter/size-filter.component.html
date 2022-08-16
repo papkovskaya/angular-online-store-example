@@ -1,0 +1,29 @@
+<div class="filter-products__size">
+  <h3>Size</h3>
+  <div class="filter-products__id" id="size">
+    <label
+    ><input
+      (change)="changeSmallSize($event)"
+      [checked]="selectedSizes.includes('s')"
+      type="checkbox"
+      class="btn-size"
+      value="S" />S</label
+    ><br />
+    <label
+    ><input
+      (change)="changeMediumSize($event)"
+      [checked]="selectedSizes.includes('m')"
+      type="checkbox"
+      class="btn-size"
+      value="M" />M</label
+    ><br />
+    <label
+    ><input
+      (change)="changeLargeSize($event)"
+      [checked]="selectedSizes.includes('l')"
+      type="checkbox"
+      class="btn-size"
+      value="L" />L</label
+    ><br />
+  </div>
+</div>

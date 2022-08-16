@@ -1,0 +1,6 @@
+.filter-products-product {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 40px;
+  flex: 1 1 0;
+}

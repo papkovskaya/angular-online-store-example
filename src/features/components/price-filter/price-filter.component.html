@@ -1,0 +1,33 @@
+<div class="filter-products__price">
+  <h3>Price</h3>
+  <div class="filter-products__price-field">
+    <input
+      (input)="setMinPrice.emit(inputValue($event))"
+      [value]="prices.min"
+      class="price-filter-min"
+      type="range"
+      min="20"
+      max="100"
+      step="5"
+      id="lower" />
+    <input
+      (input)="setMaxPrice.emit(inputValue($event))"
+      [value]="prices.max"
+      class="price-filter-max"
+      type="range"
+      min="20"
+      max="100"
+      step="5"
+      id="upper" />
+  </div>
+  <div class="price-wrap">
+    <span class="price-title">Price filter:</span>
+    <div class="price-wrap-1">
+      <div id="one">$ {{prices.min || 0}}</div>
+    </div>
+    <div class="price-wrap_line">-</div>
+    <div class="price-wrap-2">
+      <div id="two">$ {{prices.max || 100}}</div>
+    </div>
+  </div>
+</div>

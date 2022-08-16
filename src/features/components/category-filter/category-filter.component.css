@@ -1,0 +1,27 @@
+.filter-products__select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter-btn {
+  display: flex;
+  background: black;
+  margin: 5px;
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+h3 {
+  color: #000;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}

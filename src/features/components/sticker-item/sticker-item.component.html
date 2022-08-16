@@ -1,0 +1,42 @@
+<div *ngIf="sticker" class="filter-products__box stance">
+  <img
+    class="filter-products__box-image"
+    title="Why not stance?"
+    [src]="sticker[ProductItem.Img]"
+    alt="Why not stance?">
+  <div class="like-btn" [ngClass]="{active: sticker[ProductItem.IsItemFavorite]}">
+    <fa-icon [icon]="faHeart"></fa-icon>
+  </div>
+  <div class="filter-products__box-title">
+    <p>{{sticker[ProductItem.Name]}}</p>
+    <span class="filter-products__box-category">Category: {{sticker[ProductItem.Category]}}</span>
+    <div class="filter-products__size-buttons">
+      <div class="size-btn">
+        <button
+          *ngFor="let size of sticker[ProductItem.Size]"
+          title="Size: {{size}}"
+          class="color-btn-size {{size}}">
+          {{size | uppercase}}
+        </button>
+      </div>
+    </div>
+    <div class="filter-products__box-colors">
+      <div class="filter-products__box-colors btn-col">
+        <div
+          *ngFor="let color of sticker[ProductItem.Color]"
+          class="color {{color}}"
+        ></div>
+      </div>
+    </div>
+    <div class="filter-products__box-category">Price: {{sticker[ProductItem.Cost]}} $</div>
+    <div
+      *ngIf="!sticker[ProductItem.IsItemInCart]"
+      class="filter-products__btn-cart"
+      [ngClass]="{'btn-disable': sticker[ProductItem.IsItemReadyToBuy]}">
+      <button class="btn-cart add-to-cart">Add to Cart</button>
+    </div>
+    <button *ngIf="sticker[ProductItem.IsItemInCart]" class="remove">
+      <fa-icon [icon]="faCircleMinus"></fa-icon>
+    </button>
+  </div>
+</div>
